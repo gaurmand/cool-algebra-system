@@ -1,0 +1,13 @@
+GMP:
+Links:  https://gmplib.org/manual/
+        https://gmplib.org/manual/C_002b_002b-Class-Interface
+Installation: $sudo apt-get install libgmp3-dev
+
+GoogleTest:
+Links:  https://github.com/google/googletest
+        https://google.github.io/googletest/quickstart-cmake.html
+        https://google.github.io/googletest/primer.html
+
+CMake:
+Links:  https://cmake.org/cmake/help/latest/guide/tutorial/index.html
+Installation: $sudo apt-get install cmake
