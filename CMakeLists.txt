@@ -3,6 +3,7 @@ project(cool_algebra_system)
 
 # GoogleTest requires at least C++11
 set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS "-Wall -Werror")
 
 include(FetchContent)
 FetchContent_Declare(
@@ -15,17 +16,5 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(
-  gmp_test
-  gmp_test.cc
-)
-
-target_link_libraries(
-  gmp_test
-  gtest_main
-  gmpxx
-  gmp
-)
-
 include(GoogleTest)
-gtest_discover_tests(gmp_test)
+add_subdirectory(tests)

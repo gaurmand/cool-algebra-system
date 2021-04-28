@@ -1,10 +1,10 @@
-all: build test
+all: build
 
 build: 
 	cmake -S . -B build && cmake --build build
 
 test:
-	./build/gmp_test
+	./build/tests/gmpLearningTests
 
 clean:
 	rm -r build
